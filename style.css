@@ -1,3 +1,4 @@
+/* reset  */
 *{
     margin: 0;
     padding: 0;
@@ -9,13 +10,16 @@ ul{
 a{
     text-decoration: none;
 }
+/* reset end */
+
+/* navbar  */
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-
+    
 }
 .brand-name{
     font-size: 1.4rem;
@@ -30,12 +34,15 @@ a{
     padding: 1rem;
     color: #fff;
     font-family: sans-serif;
-
+    
 }
 .navbar li a:hover{
     background-color: #555;
-
+    
 }
+/* navbar end */
+
+/* humbger menu */
 .toggle-button{
     position: absolute;
     top: 0.75rem;
@@ -46,7 +53,7 @@ a{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-
+    
 }
 .toggle-button .bar{
     width: 100%;
@@ -54,6 +61,10 @@ a{
     background-color: #fff;
     border-radius: 6px;
 }
+/* humbger menu end */
+
+
+/* media queries */
 @media(max-width:768px){
     .toggle-button{
         display: flex;
@@ -63,22 +74,23 @@ a{
         text-align: center;
         display: none;
     }
-   .navbar{
-       flex-direction: column;
-   }
-   .navbar-link ul{
-       flex-direction: column;
-       width: 100%;
-   }
-   .navbar-link ul a{
-       padding: 0.5rem 1rem;
-   }
-
-
-   .brand-name{
-       align-self: flex-start;
-   }
-.active {
-    display: flex;
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-link ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-link ul a{
+        padding: 0.5rem 1rem;
+    }
+    
+    
+    .brand-name{
+        align-self: flex-start;
+    }
+    .active {
+        display: flex;
+    }
 }
-}
+/* media queries end */
